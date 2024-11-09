@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="../css/StyleSheet1.css" rel="stylesheet" />
+    <title>Bubble Burst Game 🎈</title>
+    <style></style>
+</head>
+<body onload="nameList()">
+    <h1>ברוכים הבאים למשחק פיצוץ בועות</h1>
+    <p>:אנא הכנס את פרטיך</p>
+    <select id="selectName" onclick="HidaText()">
+        <option> בחר שחקן</option>
+    </select>&nbsp;&nbsp;&nbsp;
+    <button onclick="showText()">אחר</button>
+    <input id="PlayerName" type="text" placeholder="שחקן 1" /> <br />
+    <br>
+    <br>
+    (בחר מספר אלמנטים למשחק (50-200
+    <br>
+    <input type="number" id="ElementCount" min="50" max="200" value="50" placeholder="Enter a number between 50 and 200">
+    <br>
+    -בחר את רמת המשחק בה תרצה לשחק
+    <br>
+    <select id="GameLevel">
+        <option value="1">Level 1</option>
+        <option value="2">Level 2</option>
+        <option value="3">Level 3</option>
+
+    </select>
+    <br>
+    <p> בחירת תמונה אקראית</p>
+    <input type="submit" value="אקראי" name="pic" checked="checked" onchange="RandGame()" />
+    <p>:בחר תמונה עבור האלמנטים</p>
+    <div id="imageOptions">
+        <div class="image-option">
+            <img src="../imges/1.png" alt="Image 1" />
+
+        </div>
+        <div class="image-option">
+            <img src="../imges/2.png" alt="Image 2" />
+        </div>
+        <div class="image-option">
+            <img src="../imges/3.png" alt="Image 3" />
+        </div>
+        <div class="image-option">
+            <img src="../imges/4.png" alt="Image 4" />
+        </div>
+        <div class="image-option">
+            <img src="../imges/5.png" alt="Image 5" />
+        </div>
+    </div>
+    <br>
+
+    <div id="ParentImage"></div>
+
+    <button class="start-button" onclick="startGame()">Start Game</button>
+    <script src="../js/JavaScript.js"></script>
+
+</body>
+</html>

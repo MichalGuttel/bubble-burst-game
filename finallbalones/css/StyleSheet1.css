@@ -1,0 +1,109 @@
+﻿.animate {
+    animation: mov 3s infinite;
+}
+
+@keyframes mov {
+    50% {
+        transform: rotate(32deg);
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 100px;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    font-size: 32px;
+    color: #333333;
+}
+span{
+    font-size: 25px;
+    color:#6e1b6f;
+    
+}
+
+p {
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    color: #333333;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    padding: 8px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #cccccc;
+}
+
+select {
+    width: 200px;
+}
+
+.image-option {
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 4px;
+}
+
+    .image-option img {
+        width: 70px;
+        height: 70px;
+        border-radius: 4px;
+    }
+
+    .image-option.selected {
+        border-color: #df0baa;
+    }
+
+.start-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #df0baa;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    .start-button:hover {
+        background-color: #df0baa;
+    }
+
+
+#over {
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    width: 170px;
+    height: 30px;
+    font-size: medium;
+    background: #a7c6da;
+    box-shadow: inset;
+    color: #7e571e;
+    border: ridge;
+    border-color: #7e571e;
+    border-radius: 30px;
+}
+/* page 2 */
+.animate {
+    animation: mov 3s infinite;
+}
+
+@keyframes mov {
+    50% {
+        transform: rotate(32deg);
+    }
+}
